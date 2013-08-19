@@ -1,1 +1,1 @@
-require 'cloudfront_include'
+require 'cloud_front_helpers'

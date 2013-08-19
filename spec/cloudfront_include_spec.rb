@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe CloudfrontInclude do
+describe CloudFrontHelpers do
   it 'should fail' do
     true.should == false
   end

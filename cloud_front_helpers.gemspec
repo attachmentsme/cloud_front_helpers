@@ -1,10 +1,10 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'cloudfront_include/version'
+require 'cloud_front_helpers/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "cloudfront_include"
+  spec.name          = "cloud_front_helpers"
   spec.version       = CloudfrontInclude::VERSION
   spec.authors       = ["Dan Reed", "Ben Coe", "Larry Kang"]
   spec.email         = ["dan@attachments.me"]
@@ -21,6 +21,4 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
   spec.add_development_dependency "rspec"
-
-  spec.add_dependency 'actionpack'
 end
