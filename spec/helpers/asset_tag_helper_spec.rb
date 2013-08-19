@@ -3,7 +3,7 @@ require 'spec_helper'
 describe AssetTagHelper do
   describe "configuration" do
     it 'should initialize itself with a bad key' do
-      AssetTagHelper.configuration.should == "BAD_KEY"
+      AssetTagHelper.configuration.cloud_front_key.should == "BAD_KEY"
     end
   end
 
