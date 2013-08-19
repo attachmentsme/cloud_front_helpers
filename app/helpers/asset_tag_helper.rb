@@ -9,10 +9,10 @@ module AssetTagHelper
   end
 
   class Configuration
-    attr_accessor :cloud_front_key
+    attr_accessor :cloud_front_url
 
     def initialize
-      @cloud_front_key = 'BAD_KEY'
+      @cloud_front_url = 'BAD_KEY'
     end
   end
 

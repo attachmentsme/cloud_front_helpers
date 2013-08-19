@@ -2,8 +2,10 @@ require 'spec_helper'
 
 describe AssetTagHelper do
   describe "configuration" do
-    it 'should initialize itself with a bad key' do
-      AssetTagHelper.configuration.cloud_front_key.should == "BAD_KEY"
+    it 'should initialize the gem from a config initializer' do
+      #YOUR_KEY_HERE is the default key that we initialize in this gem
+      #but you should most definitely put your own
+      AssetTagHelper.configuration.cloud_front_url.should == "YOUR_KEY_HERE"
     end
   end
 
