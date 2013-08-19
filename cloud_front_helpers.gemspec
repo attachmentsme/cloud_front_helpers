@@ -5,7 +5,7 @@ require 'cloud_front_helpers/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "cloud_front_helpers"
-  spec.version       = CloudfrontInclude::VERSION
+  spec.version       = CloudFrontHelpers::VERSION
   spec.authors       = ["Dan Reed", "Ben Coe", "Larry Kang"]
   spec.email         = ["dan@attachments.me"]
   spec.description   = %q{This gem extends ActionView::Helpers::AssetHelper to give include tags for cloudfront assets}

@@ -1,4 +1,4 @@
-module CloudfrontHelpers
+module CloudFrontHelpers
   class AssetHelperExtensions
     def cloudfront_javascript_include_tag
       puts 'rock banana'
