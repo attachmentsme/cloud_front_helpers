@@ -7,9 +7,9 @@ Gem::Specification.new do |spec|
   spec.name          = "cloud_front_helpers"
   spec.version       = CloudFrontHelpers::VERSION
   spec.authors       = ["Dan Reed", "Ben Coe", "Larry Kang"]
-  spec.email         = ["dan@attachments.me"]
-  spec.description   = %q{This gem extends ActionView::Helpers::AssetHelper to give include tags for cloudfront assets}
-  spec.summary       = %q{By including this gem in your project, you can set up assets to load through cloudfront easily without manually adding the cloudfront URL to your stylesheets,scripts and images.}
+  spec.email         = ["dan@attachments.me", "ben@attachments.me", "larry@attachments.me"]
+  spec.description   = %q{provides rails view helpers for referencing a CDN (such as CloudFront) on an assets base url, on an asset by asset basis.}
+  spec.summary       = %q{provides rails view helpers for referencing a CDN (such as CloudFront) on an assets base url, on an asset by asset basis. asset_host, setting can be used to set this value globally.}
   spec.homepage      = ""
   spec.license       = "MIT"
 
@@ -18,6 +18,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
+  spec.add_dependency "sass", "~> 3.2.10"
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
   spec.add_development_dependency "rspec"
