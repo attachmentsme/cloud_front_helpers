@@ -40,7 +40,9 @@ Once you've set up your initializer, including CDN assets has never been simpler
 
 In addition to these asset tag helpers, we've included a sass extension for your background and background-image tags. In any stylesheet, put something like this: 
     
-    background: cf_url("/path/to/some/image.jpg");
+    .whatever {
+      background: cf_url("/path/to/some/image.jpg");
+    }
 
 And that's it! 
 
