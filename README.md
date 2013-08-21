@@ -33,11 +33,13 @@ If no initializer exists, your code will still work but it'll just run like norm
 ## Usage
 
 Once you've set up your initializer, including CDN assets has never been simpler. We've included helpers for image, styles, and scripts.
+    
     <%= cf_image_tag "/images/foo.png" %>
     <%= cf_javascript_include_tag "/javascripts/spaceCats.js" %>
     <%= cf_stylesheet_link_tag "/stylesheets/bar.css" %>
 
 In addition to these asset tag helpers, we've included a sass extension for your background and background-image tags. In any stylesheet, put something like this: 
+    
     background: cf_url("/path/to/some/image.jpg");
 
 And that's it! 
