@@ -1,4 +1,4 @@
-# CloudfrontInclude
+# Cloud Front Helpers
 
 This gem hooks into ActionView::Helpers::AssetTagHelper and provides some asset tags that will replace a local resource with something hosted on a CDN, like Amazon's CloudFront. This is an easy way to use a CDN in your code with only minor effort on your part. Your users will see greatly reduced load time and you'll see happier users.
 
@@ -27,8 +27,6 @@ This initializer should look something like:
     AssetTagHelper.configure do |config|
       config.cloud_front_url = "https://YOUR_CDN_URL.cloudfront.net" if Rails.env.production?
     end
-
-If no initializer exists, your code will still work but it'll just run like normal (off your asset pipeline).
 
 ## Usage
 
